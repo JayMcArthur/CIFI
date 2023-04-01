@@ -1,6 +1,10 @@
-from PyQt6.QtWidgets import QMainWindow, QPushButton, QWidget, QTabWidget,QVBoxLayout, QGridLayout, QLabel
-from PyQt6.QtGui import QIcon
+import pickle
+
+from PyQt6.QtWidgets import QMainWindow, QSpinBox, QPushButton, QLineEdit, QWidget, QTabWidget, QSizePolicy, QVBoxLayout, QGridLayout, QLabel
+from pyqtconfig import ConfigManager
 from PyQt6.QtCore import pyqtSlot
+from PyQt6.QtGui import QIcon, QIntValidator
+from settings.player import PlayerSettings
 
 
 class App(QMainWindow):
@@ -57,23 +61,72 @@ class CustomTable(QWidget):
             QWidget(),
             QWidget()
         ]
+        self.configs = [
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager(),
+            ConfigManager()
+        ]
 
-        self.tab_widget.resize(300, 200)
-
+        # Create Tabs
         for tab, name in zip(self.tabs, self.tab_names):
             self.tab_widget.addTab(tab, name)
 
+        # Call each Tab setup
         self.setup_main_tab()
+        self.setup_player_tab()
 
+        # Post Tabs
         self.layout.addWidget(self.tab_widget)
         self.setLayout(self.layout)
 
     def setup_main_tab(self):
         working_tab = 0
         self.tabs[working_tab].layout = QGridLayout()
-        pushButton1 = QPushButton("PyQt5 button")
-        self.tabs[working_tab].layout.addWidget(pushButton1, 0, 0)
         self.tabs[working_tab].setLayout(self.tabs[working_tab].layout)
+
+        # Create Save BUtton
+        export_button = QPushButton('Save')
+        export_button.clicked.connect(self.save_all_configs)
+        self.tabs[working_tab].layout.addWidget(export_button, 0, 0, 1, 1)
+
+    def setup_player_tab(self):
+        working_tab = 1
+        self.configs[working_tab].set_defaults(PlayerSettings)
+        self.tabs[working_tab].layout = QGridLayout()
+        self.tabs[working_tab].setLayout(self.tabs[working_tab].layout)
+
+        # Create Level Text
+        player_label = QLabel('Level:')
+        player_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        self.tabs[working_tab].layout.addWidget(player_label, 0, 0, 1, 1)
+        # Create Level Input
+        player_edit = QSpinBox()
+        player_edit.setRange(0, 1000)
+        self.configs[working_tab].add_handler('Level', player_edit)
+        self.tabs[working_tab].layout.addWidget(player_edit, 0, 1, 1, 3)
+
+        # Unfinished LP Bar Text
+        lp_bar_label = QLabel('LP Bar:')
+        lp_bar_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+
+    def save_all_configs(self):
+        # Example on how to edit a var
+        self.configs[1].set('Level', self.configs[1].get('Level') * 2)
+
+        # Real Save function
+        for config in self.configs:
+            if config.as_dict():
+                # This path would need to be dynamic
+                with open('./person_data.py', 'w') as f:
+                    f.write(str(config.as_dict()))
 
     @pyqtSlot()
     def on_click(self):

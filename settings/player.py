@@ -52,6 +52,12 @@ class Boost:
         return self.__Cell * self.__MK1 * self.__MK2 * self.__MK3 * self.__MK4 * self.__MK5 * self.__MK6 * self.__MK7 * self.__MK8
 
 
+PlayerSettings = {
+    "Level": 0,
+    "LP Bar": 0
+}
+
+
 class Player:
     def __init__(self):
         self.player = {
