@@ -1,0 +1,341 @@
+{
+  "Generator": {
+    "MK1": {
+      "Name": "MK1 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 10,
+      "Cost Scaling": 1,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk1", 1.01]
+    },
+    "MK2": {
+      "Name": "MK2 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 20,
+      "Cost Scaling": 2,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk2", 1.02]
+    },
+    "MK3": {
+      "Name": "MK3 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 30,
+      "Cost Scaling": 3,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk3", 1.03]
+    },
+    "MK4": {
+      "Name": "MK4 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 40,
+      "Cost Scaling": 4,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk4", 1.04]
+    },
+    "MK5": {
+      "Name": "MK5 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 50,
+      "Cost Scaling": 5,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk5", 1.05]
+    },
+    "MK6": {
+      "Name": "MK6 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 60,
+      "Cost Scaling": 6,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk6", 1.06]
+    },
+    "MK7": {
+      "Name": "MK7 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 70,
+      "Cost Scaling": 7,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk7", 1.07]
+    },
+    "MK8": {
+      "Name": "MK8 Gen Boost",
+      "Unlocked": false,
+      "Base Cost": 80,
+      "Cost Scaling": 8,
+      "Current Level": 0,
+      "Max Level": 100,
+      "Boost": ["mk8", 1.08]
+    }
+  },
+  "Special": {
+    "Tokens": {
+      "Name": "Token Boost",
+      "Unlocked": false,
+      "Base Cost": 100,
+      "Cost Scaling": 200,
+      "Current Level": 0,
+      "Max Level": 9,
+      "Boost": ["tokens", 999]
+    },
+    "Cells": {
+      "Name": "Cell Boost",
+      "Unlocked": false,
+      "Base Cost": 200,
+      "Cost Scaling": 1,
+      "Current Level": 0,
+      "Max Level": 1000,
+      "Boost": ["cell", 1.05]
+    },
+    "Mods": {
+      "Name": "Mod Point Boost",
+      "Unlocked": false,
+      "Base Cost": 300,
+      "Cost Scaling": 10,
+      "Current Level": 0,
+      "Max Level": 25,
+      "Boost": ["mods", 1.05]
+    },
+    "Shards": {
+      "Name": "Shard Boost",
+      "Unlocked": false,
+      "Base Cost": 400,
+      "Cost Scaling": 20,
+      "Current Level": 0,
+      "Max Level": 25,
+      "Boost": ["shards", 1.05]
+    },
+    "Research Points": {
+      "Name": "Research Boost",
+      "Unlocked": false,
+      "Base Cost": 500,
+      "Cost Scaling": 25,
+      "Current Level": 0,
+      "Max Level": 25,
+      "Boost": ["rp", 1.05]
+    }
+  },
+  "One-Time": {
+    "Alpha": {
+      "Name": "Alpha Card",
+      "Unlocked": false,
+      "Base Cost": 1000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.1, "mk1", 1.26, "mk2", 1.18]
+    },
+    "Beta": {
+      "Name": "Beta Card",
+      "Unlocked": false,
+      "Base Cost": 1000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk1", 1.18, "mk2", 1.18, "mk3", 1.18]
+    },
+    "Ceti": {
+      "Name": "Ceti Card",
+      "Unlocked": false,
+      "Base Cost": 1000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.12, "mk3", 1.16, "mods", 1.08]
+    },
+    "Delta": {
+      "Name": "Delta Card",
+      "Unlocked": false,
+      "Base Cost": 1500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.65, "mk2", 1.07, "mk3", 1.07]
+    },
+    "Epsilon": {
+      "Name": "Epsilon Card",
+      "Unlocked": false,
+      "Base Cost": 1500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk1", 1.26, "mk2", 1.26, "mk4", 1.22]
+    },
+    "Fenix": {
+      "Name": "Fenix Card",
+      "Unlocked": false,
+      "Base Cost": 1500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.08, "mk4", 1.5, "mods", 1.07]
+    },
+    "Gamma": {
+      "Name": "Gamma Card",
+      "Unlocked": false,
+      "Base Cost": 2000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.7, "mk3", 1.17, "mk5", 1.17]
+    },
+    "Helion": {
+      "Name": "Helion Card",
+      "Unlocked": false,
+      "Base Cost": 2000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk1", 1.34, "mk2", 1.34, "mods", 1.13]
+    },
+    "Ixion": {
+      "Name": "Ixion Card",
+      "Unlocked": false,
+      "Base Cost": 2000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk4", 1.32, "mk5", 1.26, "mods", 1.16]
+    },
+    "Juno": {
+      "Name": "Juno Card",
+      "Unlocked": false,
+      "Base Cost": 2500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 1.6, "mods", 1.2, "shards", 1.4]
+    },
+    "Kappa": {
+      "Name": "Kappa Card",
+      "Unlocked": false,
+      "Base Cost": 2500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk1", 1.92, "mk6", 1.46, "mods", 1.16]
+    },
+    "Lyra": {
+      "Name": "Lyra Card",
+      "Unlocked": false,
+      "Base Cost": 2500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk2", 1.86, "mk5", 1.82, "shards", 1.2]
+    },
+    "Miko": {
+      "Name": "Miko Card",
+      "Unlocked": false,
+      "Base Cost": 3000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk7", 2, "mods", 1.32, "rp", 1.34]
+    },
+    "Nora": {
+      "Name": "Nora Card",
+      "Unlocked": false,
+      "Base Cost": 3000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk6", 3, "mk7", 3, "ap", 3]
+    },
+    "Omega": {
+      "Name": "Omega Card",
+      "Unlocked": false,
+      "Base Cost": 3000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mods", 3, "shards", 3, "ap", 3]
+    },
+    "Pegasus": {
+      "Name": "Pegasus Card",
+      "Unlocked": false,
+      "Base Cost": 3500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["cell", 3, "mk8", 3, "rp", 3]
+    },
+    "Qoru": {
+      "Name": "Qoru Card",
+      "Unlocked": false,
+      "Base Cost": 3500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk6", 3, "mk7", 3, "mk8", 3]
+    },
+    "Rigel": {
+      "Name": "Rigel Card",
+      "Unlocked": false,
+      "Base Cost": 3500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["shards", 3, "rp", 3, "ap", 3]
+    },
+    "Sigma": {
+      "Name": "Sigma Card",
+      "Unlocked": false,
+      "Base Cost": 4000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk2", 2.7, "mk7", 2.4, "mods", 1.75]
+    },
+    "Typhon": {
+      "Name": "Typhon Card",
+      "Unlocked": false,
+      "Base Cost": 4000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk3", 3.23, "mk6", 1.72, "rp", 2]
+    },
+    "Utopia": {
+      "Name": "Utopia Card",
+      "Unlocked": false,
+      "Base Cost": 4000,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk4", 3, "mk5", 3, "ap", 3]
+    },
+    "Vex": {
+      "Name": "Vex Card",
+      "Unlocked": false,
+      "Base Cost": 4500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk8", 3, "mods", 3, "shards", 3]
+    },
+    "Xeno": {
+      "Name": "Xeno Card",
+      "Unlocked": false,
+      "Base Cost": 4500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk8", 3, "shards", 3, "rp", 3]
+    },
+    "Zion": {
+      "Name": "Zion Card",
+      "Unlocked": false,
+      "Base Cost": 4500,
+      "Cost Scaling": 0,
+      "Current Level": 0,
+      "Max Level": 1,
+      "Boost": ["mk8", 3, "shards", 3, "ap", 3]
+    }
+  }
+}
