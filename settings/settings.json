@@ -1,13 +1,12 @@
 {
-    "priorities-Cells": 1,
-    "priorities-Mods": 20,
-    "priorities-Shards": 16,
-    "priorities-RP": 10,
-    "priorities-AP": 100,
-    "priorities-MM": 100,
-    "priorities-OP": 1000,
-    "priorities-Cost Reduction": 1,
-    "priorities-Rank Points": 1,
-    "active play": 1440,
-    "priorities-active play": 0
+    "priorities_Cells": 1,
+    "priorities_Mods": 20,
+    "priorities_Shards": 16,
+    "priorities_RP": 10,
+    "priorities_AP": 100,
+    "priorities_MM": 100,
+    "priorities_OP": 1000,
+    "priorities_Cost Reduction": 1,
+    "priorities_Rank Points": 1,
+    "priorities_active play": 1440
 }

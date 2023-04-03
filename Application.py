@@ -113,105 +113,35 @@ class CustomTable(QWidget):
         priorities_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         self.tabs[working_tab].layout.addWidget(priorities_label, 0, 0, 1, 1)
 
-        # Create Cells Text
-        cells_label = QLabel('Cells:')
-        cells_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(cells_label, 1, 0, 1, 1)
-        # Create Cells Input
-        cells_edit = QSpinBox()
-        cells_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-Cells', cells_edit)
-        self.tabs[working_tab].layout.addWidget(cells_edit, 1, 1, 1, 1)
+        # Create Cells
+        self.create_text_num_input(working_tab, 'Cells:', 1, 0, 10000, 'priorities_Cells')
 
-        # Create Mods Text
-        mods_label = QLabel('Mods:')
-        mods_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(mods_label, 2, 0, 1, 1)
-        # Create Mods Input
-        mods_edit = QSpinBox()
-        mods_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-Mods', mods_edit)
-        self.tabs[working_tab].layout.addWidget(mods_edit, 2, 1, 1, 1)
+        # Create Mods
+        self.create_text_num_input(working_tab, 'Mods:', 2, 0, 10000, 'priorities_Mods')
 
-        # Create Shards Text
-        shards_label = QLabel('Shards:')
-        shards_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(shards_label, 3, 0, 1, 1)
-        # Create Shards Input
-        shards_edit = QSpinBox()
-        shards_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-Shards', shards_edit)
-        self.tabs[working_tab].layout.addWidget(shards_edit, 3, 1, 1, 1)
+        # Create Shards
+        self.create_text_num_input(working_tab, 'Shards:', 3, 0, 10000, 'priorities_Shards')
 
-        # Create RP Text
-        rp_label = QLabel('Research Points:')
-        rp_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(rp_label, 4, 0, 1, 1)
-        # Create RP Input
-        rp_edit = QSpinBox()
-        rp_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-RP', rp_edit)
-        self.tabs[working_tab].layout.addWidget(rp_edit, 4, 1, 1, 1)
+        # Create Research Points
+        self.create_text_num_input(working_tab, 'Research Points:', 4, 0, 10000, 'priorities_RP')
 
-        # Create AP Text
-        ap_label = QLabel('Academy Points:')
-        ap_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(ap_label, 5, 0, 1, 1)
-        # Create AP Input
-        ap_edit = QSpinBox()
-        ap_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-AP', ap_edit)
-        self.tabs[working_tab].layout.addWidget(ap_edit, 5, 1, 1, 1)
+        # Create Academy Points
+        self.create_text_num_input(working_tab, 'Academy Points:', 5, 0, 10000, 'priorities_AP')
 
-        # Create MM Text
-        mm_label = QLabel('Mission Materials:')
-        mm_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(mm_label, 6, 0, 1, 1)
-        # Create MM Input
-        mm_edit = QSpinBox()
-        mm_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-MM', mm_edit)
-        self.tabs[working_tab].layout.addWidget(mm_edit, 6, 1, 1, 1)
+        # Create Mission Materials
+        self.create_text_num_input(working_tab, 'Mission Materials:', 6, 0, 10000, 'priorities_MM')
 
-        # Create OP Text
-        op_label = QLabel('Ouroboros Points:')
-        op_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(op_label, 7, 0, 1, 1)
-        # Create Level Input
-        op_edit = QSpinBox()
-        op_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-OP', op_edit)
-        self.tabs[working_tab].layout.addWidget(op_edit, 7, 1, 1, 1)
+        # Create Ouroboros Points
+        self.create_text_num_input(working_tab, 'Ouroboros Points:', 7, 0, 10000, 'priorities_OP')
 
         # Create Cost Reduction Text
-        cr_label = QLabel('Cost Reduction:')
-        cr_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(cr_label, 8, 0, 1, 1)
-        # Create Cost Reduction Input
-        cr_edit = QSpinBox()
-        cr_edit.setRange(0, 10000)
-        self.configs[working_tab].add_handler('priorities-Cost Reduction', cr_edit)
-        self.tabs[working_tab].layout.addWidget(cr_edit, 8, 1, 1, 1)
+        self.create_text_num_input(working_tab, 'Cost Reduction', 8, 0, 10000, 'priorities_Cost Reduction')
 
         # Create Rank Points Text
-        rank_label = QLabel('Rank Points:')
-        rank_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(rank_label, 9, 0, 1, 1)
-        # Create Level Input
-        rank_edit = QSpinBox()
-        rank_edit.setRange(0, 1000)
-        self.configs[working_tab].add_handler('priorities-Rank Points', rank_edit)
-        self.tabs[working_tab].layout.addWidget(rank_edit, 9, 1, 1, 1)
+        self.create_text_num_input(working_tab, 'Rank Points', 9, 0, 10000, 'priorities_Rank Points')
 
         # Create Active Play Text
-        active_label = QLabel('Active Play Time:')
-        active_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(active_label, 10, 0, 1, 1)
-        # Create Level Input
-        active_edit = QSpinBox()
-        active_edit.setRange(0, 1440)
-        self.configs[working_tab].add_handler('priorities-active play', active_edit)
-        self.tabs[working_tab].layout.addWidget(active_edit, 10, 1, 1, 1)
+        self.create_text_num_input(working_tab, 'Active Play Time:', 10, 0, 1440, 'priorities_active play')
 
         # Create Save Button
         export_button = QPushButton('Save')
@@ -222,45 +152,34 @@ class CustomTable(QWidget):
         working_tab = 1
         self.create_layout(working_tab)
 
-        # Create Level Text
-        player_label = QLabel('Level:')
-        player_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(player_label, 0, 0, 1, 1)
-        # Create Level Input
-        player_edit = QSpinBox()
-        player_edit.setRange(0, 1000)
-        self.configs[working_tab].add_handler('Level', player_edit)
-        self.tabs[working_tab].layout.addWidget(player_edit, 0, 1, 1, 1)
+        # Create Level
+        self.create_text_num_input(working_tab, 'Level:', 0, 0, 1000, 'Level')
 
-        # Create LP Bar Text
-        lp_bar_label = QLabel('LP Bar:')
-        lp_bar_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        self.tabs[working_tab].layout.addWidget(lp_bar_label, 1, 0, 1, 1)
-        # Create LP Bar Input
-        lp_bar_edit = QSpinBox()
-        lp_bar_edit.setRange(0, 9)
-        self.configs[working_tab].add_handler('LP Bar', lp_bar_edit)
-        self.tabs[working_tab].layout.addWidget(lp_bar_edit, 1, 1, 1, 1)
+        # Create LP Bar
+        self.create_text_num_input(working_tab, 'LP Bar:', 1, 0, 9, 'LP Bar')
 
     def setup_tokens_tab(self):
         working_tab = 2
         self.create_layout(working_tab)
 
-        # Create Level Text
-        player_label = QLabel('Level:')
-        player_label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
-        # self.tabs[working_tab].layout.addWidget(player_label, 0, 0, 1, 1)
-        # Create Level Input
-        player_edit = QSpinBox()
-        player_edit.setRange(0, 1000)
-        # self.configs[working_tab].add_handler('Level', player_edit)
-        # self.tabs[working_tab].layout.addWidget(player_edit, 0, 1, 1, 1)
+        # Create Tokens
+        self.create_text_num_input(working_tab, 'Tokens:', 0, 0, 100000, 'Tokens')
 
     def create_layout(self, tab_number):
         with open(self.tab_paths[tab_number], 'r') as file:
             self.configs[tab_number].set_defaults(json.load(file))
         self.tabs[tab_number].layout = QGridLayout()
         self.tabs[tab_number].setLayout(self.tabs[tab_number].layout)
+
+    def create_text_num_input(self, working_tab, text, row, min_i, max_i, key):
+        label = QLabel(text)
+        label.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
+        self.tabs[working_tab].layout.addWidget(label, row, 0, 1, 1)
+
+        spin = QSpinBox()
+        spin.setRange(min_i, max_i)
+        self.configs[working_tab].add_handler(key, spin)
+        self.tabs[working_tab].layout.addWidget(spin, row, 1, 1, 1)
 
     def save_all_configs(self):
         # Example on how to edit a var
@@ -269,7 +188,6 @@ class CustomTable(QWidget):
         # Real Save function
         for config, path in zip(self.configs, self.tab_paths):
             if config.as_dict():
-                # This path would need to be dynamic
                 with open(path, 'w') as f:
                     dict_data = config.as_dict()
                     json_data = json.dumps(dict_data, indent=4)
