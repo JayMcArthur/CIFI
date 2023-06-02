@@ -1,42 +1,42 @@
 {
-  "MK1": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK2": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK3": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK4": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK5": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK6": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK7": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  },
-  "MK8": {
-    "Unlocked": false,
-    "Purchased": 0,
-    "Automation": false
-  }
+    "MK1": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK2": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK3": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK4": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK5": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK6": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK7": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    },
+    "MK8": {
+        "Unlocked": false,
+        "Purchased": 0,
+        "Automation": false
+    }
 }

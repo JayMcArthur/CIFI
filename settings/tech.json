@@ -1,50 +1,50 @@
 {
-  "MK1": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK2": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK3": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK4": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK5": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK6": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK7": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  },
-  "MK8": {
-    "Hardware": 0,
-    "Hardware Automation": false,
-    "Software": 0,
-    "Software Automation": false
-  }
+    "MK1": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK2": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK3": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK4": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK5": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK6": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK7": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    },
+    "MK8": {
+        "Hardware": 0,
+        "Hardware Automation": false,
+        "Software": 0,
+        "Software Automation": false
+    }
 }

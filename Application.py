@@ -99,6 +99,14 @@ class CustomTable(QWidget):
         self.setup_main_tab()
         self.setup_player_tab()
         self.setup_tokens_tab()
+        self.setup_diamond_tab()
+        self.setup_generator_tab()
+        self.setup_fleet_tab()
+        self.setup_tech_tab()
+        self.setup_loop_tab()
+        self.setup_shard_tab()
+        self.setup_research_tab()
+        self.setup_academy_tab()
 
         # Post Tabs
         self.layout.addWidget(self.tab_widget)
@@ -164,6 +172,38 @@ class CustomTable(QWidget):
 
         # Create Tokens
         self.create_text_num_input(working_tab, 'Tokens:', 0, 0, 100000, 'Tokens')
+
+    def setup_diamond_tab(self):
+        working_tab = 3
+        self.create_layout(working_tab)
+
+    def setup_generator_tab(self):
+        working_tab = 4
+        self.create_layout(working_tab)
+
+    def setup_fleet_tab(self):
+        working_tab = 5
+        self.create_layout(working_tab)
+
+    def setup_tech_tab(self):
+        working_tab = 6
+        self.create_layout(working_tab)
+
+    def setup_loop_tab(self):
+        working_tab = 7
+        self.create_layout(working_tab)
+
+    def setup_shard_tab(self):
+        working_tab = 8
+        self.create_layout(working_tab)
+
+    def setup_research_tab(self):
+        working_tab = 9
+        self.create_layout(working_tab)
+
+    def setup_academy_tab(self):
+        working_tab = 10
+        self.create_layout(working_tab)
 
     def create_layout(self, tab_number):
         with open(self.tab_paths[tab_number], 'r') as file:
